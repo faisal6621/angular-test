@@ -10,12 +10,12 @@ import { products } from '../products';
 export class ProductListComponent {
   products = products;
 
-  share(productName) {
-    window.alert('The product ('+productName+') has been shared!');
+  share(productName: String) {
+    window.alert('The product (' + productName + ') has been shared!');
   }
 
-  onNotify(productName){
-    window.alert('You will be notified when the product ('+productName+') goes on sale.')
+  onNotify(productName: String) {
+    window.alert('You will be notified when the product (' + productName + ') goes on sale.')
   }
 }
 
